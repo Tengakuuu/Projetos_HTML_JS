@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style type="text/css">
+        body {
+            background: rgb(223, 192, 208);
+        }
+
+        body > .card {
+            width: 140px;
+            height: 43px;
+            background-color: black;
+            margin: 430px;
+            transition: all 0.4s ease;
+        }
+        h1 {
+            color: azure;
+            text-align: center;
+        }
+        h2 {
+            text-align: center;
+        }
+        #dialogue {
+           width: 170px;
+           height: 50px;
+           background-color: white;
+           margin-top: -590px;
+           margin-left: 620px;
+           box-shadow: -3px 2px 0px 1px rgb(101, 101, 101);  
+        }
+        .card:hover{
+            -webkit-transform: scale(1.3);
+            -ms-transform: scale(1.3);
+            transform: scale(1.3);
+            background: #500000;
+        }
+        .card:active {
+            -webkit-transform: scale(0.5);
+            -ms-transform: scale(0.5);
+            transform: scale(0.5);
+            background: #b80000;
+        }
+    </style>
+    <title>Kimi no Kusottare(¬_¬ )</title>
+</head>
+<body>
+    <div class="credits">Made By Tengoku... a bored and crazy programmer :P</div>
+    <p>
+    <div class="langu">Language</div>
+    <p>
+    <button onclick="pt()">BR</button> <button onclick="jp()">JP</button> <button onclick="eng()">EN</button>
+    <hr>
+    <div class="card" onmouseenter="entrou()" onmouseout="saiu()" onclick="clicou()">
+        <h1 class="face">-__-</h1>
+    </div>
+    <div id="dialogue"><h2 class="dialo">...</h2></div>
+    <script src="script.js"></script>
+</body>
+</html>
+
