@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style> 
+
+        body
+        {
+            background-color: rgb(255, 255, 255);
+        }
+        
+        #square {
+            width: 100px;
+            height: 100px;
+            border: 2px solid ;
+            background-color: rgb(255, 255, 255);
+            text-align: center;
+        }
+        #button {
+            width: 100px;
+            margin-left: 150px;
+            margin-top: -70px;
+            background-color: rgb(255, 255, 255);
+        }
+
+    </style>
+    <title>Testes</title>
+</head>
+<body>
+    <div id="square">Quadrado</div>
+
+    <div id='button'><button id="botao">MUDAR DE COR</button></div>
+    <script>
+        const botao = document.getElementById('botao');
+        const square = document.getElementById('square');
+
+        botao.addEventListener("click", function() {
+        const cor1 = "#" + Math.floor(Math.random() * 16777215).toString(16);
+        const cor2 = "#" + Math.floor(Math.random() * 16777215).toString(16);
+        const cor3 = "#" + Math.floor(Math.random() * 16777215).toString(16);
+
+        square.style.backgroundColor = cor1;
+        botao.style.backgroundColor = cor2;
+        body.style.backgroundColor = cor3;
+
+});
+    </script>
+</body>
+</html>
