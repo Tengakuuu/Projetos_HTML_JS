@@ -1,0 +1,33 @@
+article {
+    padding: 10px;
+    width: 80%;
+    height: 50vh;
+    border: 1px solid;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 5vh;
+    margin-bottom: 5vh;
+    background-color: rgb(175, 150, 104);
+}
+article > h1 > p {
+    text-align: center;
+}
+article > h1 {
+    text-align: center;
+    border: 3px solid yellow;
+    height: max-content;
+    width: 100%;
+    color: aliceblue;
+    text-shadow: 2px 2px black;
+    background: linear-gradient(black,red, blue, green, rgb(36, 36, 83))
+}
+article > .img {
+    margin-left: auto;
+    margin-right: auto;
+    width: 30vw;
+    height: 30vh;
+    border: 1px solid;
+    background: url(https://img.hype.games/cdn/9edf816d-5625-45d2-9ef6-8b2ae65bb7eaCover_Elder%20Ring-600.png);
+    background-position: center;
+    background-size: cover;
+}

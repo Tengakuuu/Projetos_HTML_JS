@@ -1,0 +1,10 @@
+main {
+    margin-top: 20px;
+    width: 90%;
+    padding: 0px;
+    height: auto;
+    margin-right: auto;
+    margin-left: auto;
+    border: 2px solid;
+    background-color: rgb(114, 76, 29);
+}
